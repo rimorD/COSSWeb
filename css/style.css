@@ -1,0 +1,33 @@
+footer{
+	text-align:center;
+	background-color:#222;
+	color:#FFFFFF;
+	padding-top:20px;
+	padding-bottom:10px;
+}
+body {
+	padding-top: 30px;
+}
+main{
+	padding-bottom: 20px;
+}
+a:hover{
+	text-decoration: none;
+}
+h1,h2,h3,nav{
+	text-transform:uppercase;
+}
+h1,h2{
+	text-align:center;
+	color:#FFFCFF;
+}
+h1{
+	font-size:60px;
+}
+
+h2{
+	font-size:36px;
+}
+h3{
+	font-size:30px;
+}

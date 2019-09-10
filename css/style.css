@@ -7,12 +7,7 @@ footer{
 }
 .carousel img{
 	width:100%;
-}
-body {
-	padding-top: 30px;
-}
-a:hover{
-	text-decoration: none;
+	max-height:100vh;
 }
 h1,h2,h3,nav{
 	text-transform:uppercase;
@@ -29,4 +24,8 @@ h2{
 }
 h3{
 	font-size:30px;
+}
+.navbar{
+	color:#FFFFFF;
+	background-color:#262626 !important;
 }

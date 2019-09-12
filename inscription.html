@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8"/>
+    <title>COSS Website Oficial</title>
+	 <meta name="description" content="Confederate Space Systems"/>
+	 <meta name="author" content="David Ferreiro Fernández"/>
+	 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel='shortcut icon' type='image/png' href='res/favicon.png' />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand">
+  <img src="res/bandera.png" width="60" height="30" class="d-inline-block align-top" alt="">
+    Confederate Space Systems
+  </a>
+  <div class="container-fluid">
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
+		  <li class="nav-item">
+			<a class="nav-link" href="index.html">Home</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="about.html">Quiénes Somos</a>
+		  </li>
+		  <li class="nav-item active">
+			<a class="nav-link" href="inscription.html">Inscripción</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="news.html">Noticias</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="contact.html">Contacto</a>
+		  </li>
+		</ul>
+	</div>
+  </div>
+</nav>
+<main>
+<form>
+  <div class="form-group">
+    <label for="cmdrName">Nombre CMDT (Juego)</label>
+    <input type="text" class="form-control" id="cmdrName" placeholder="Nombre del comandante"required>
+  </div>
+  <div class="form-group">
+    <label for="nativeSystem">Sistema Natal</label>
+    <input type="text" class="form-control" id="nativeSystem" placeholder="Sistema natal">
+  </div>
+  <div class="form-group">
+    <label for="role">Rol Principal</label>
+    <select class="form-control" id="role" required>
+		<option>Explorador</option>
+		<option>Comerciante</option>
+		<option>Combate</option>
+		<option>Combate (PVP)</option>
+	</select>
+  </div>
+  <div class="form-group">
+    <label for="secondRole">Rol Secundario</label>
+    <select class="form-control" id="secondRole">
+		<option>Explorador</option>
+		<option>Comerciante</option>
+		<option>Combate</option>
+		<option>Combate (PVP)</option>
+	</select>
+  </div>
+  <div class="form-group">
+    <label for="ship">Nave Principal</label>
+    <input type="text" class="form-control" id="ship" placeholder="Modelo de la nave" required>
+  </div>
+  <div class="form-group">
+    <label for="secondShip">Nave Secundaria</label>
+    <input type="text" class="form-control" id="secondShip" placeholder="Modelo de la nave">
+  </div>
+  <div class="form-group">
+    <label for="combatRank">Rango de Combate</label>
+    <select class="form-control" id="combatRank"required>
+		<option>Harmless - Inofensivo</option>
+		<option>Mostly Harmless - Casi Inofensivo</option>
+		<option>Novice - Novato</option>
+		<option>Competent - Competente</option>
+		<option>Expert - Experto</option>
+		<option>Master - Maestro</option>
+		<option>Dangerous - Peligroso</option>
+		<option>Deadly - Letal</option>
+		<option>Elite - Élite</option>
+	</select>
+  </div>
+  <div class="form-group">
+    <label for="tradeRank">Rango de Comercio</label>
+    <select class="form-control" id="tradeRank" required>
+		<option>Penniless - Pobre</option>
+		<option>Mostly Penniless - Casi Pobre</option>
+		<option>Peddler - Buhonero</option>
+		<option>Dealer - Distribuidor</option>
+		<option>Merchant - Mercader</option>
+		<option>Broker - Broker</option>
+		<option>Entrepreneur - Empresario</option>
+		<option>Tycoon - Magnate</option>
+		<option>Elite - Élite</option>
+	</select>
+  </div>
+  <div class="form-group">
+    <label for="explorationRank">Rango de Exploración</label>
+    <select class="form-control" id="explorationRank"required>
+		<option>Aimless - Perdido</option>
+		<option>Mostly Aimless - Casi Perdido</option>
+		<option>Scout - Explorador</option>
+		<option>Surveyor - Topógrafo</option>
+		<option>Trailblazer - Rastreador</option>
+		<option>Pathfinder - Guía</option>
+		<option>Ranger - Descubridor</option>
+		<option>Pioneer - Pionero</option>
+		<option>Elite - Élite</option>
+	</select>
+  </div>
+  <div class="form-group">
+    <label for="pvpRank">Rango de Combate (PVP)</label>
+    <select class="form-control" id="pvpRank" required>
+		<option>Helpless - Inofensivo</option>
+		<option>Mostly Helpless - Casi Inofensivo</option>
+		<option>Amateur - Amater</option>
+		<option>Semi Professional - Semi Profesional</option>
+		<option>Professional - Profesional</option>
+		<option>Champion - Campeón</option>
+		<option>Hero - Héroe</option>
+		<option>Legend - Leyenda</option>
+		<option>Elite - Élite</option>
+	</select>
+  </div>
+  <legend class="col-form-label">¿Eres un jugador activo?</legend>
+  <div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" name="active" id="activeYes"required>
+	  <label class="form-check-label" for="activeYes">Sí</label>
+  </div>
+  <div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" name="active" id="activeNo">
+	  <label class="form-check-label" for="activeNo">No</label>
+  </div>
+  <legend class="col-form-label">¿Tienes Discord?</legend>
+  <div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" name="discord" id="discordYes" required>
+	  <label class="form-check-label" for="discordYes">Sí</label>
+  </div>
+  <div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" name="discord" id="discordNo"">
+	  <label class="form-check-label" for="discordNo">No</label>
+  </div>
+  <legend class="col-form-label">¿Tienes Telegram?</legend>
+  <div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" name="telegram" id="telegramYes"required>
+	  <label class="form-check-label" for="telegramYes">Sí</label>
+  </div>
+  <div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" name="telegram" id="telegramNo">
+	  <label class="form-check-label" for="telegramNo">No</label>
+  </div>
+  <div class="form-group">
+    <label for="fuente">¿Cómo nos conociste?</label>
+    <textarea class="form-control" id="fuente" rows="3" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="interes">¿Por qué quieres ser miembro?</label>
+    <textarea class="form-control" id="interes" rows="3"required></textarea>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">¡Gloria al COSS!</button>
+</form>
+</main>
+<footer>
+		<p>©2019 Confederate Space Systems</p>
+		<p>rebeldegorrino@gmail.com</p>
+		<a href="https://twitter.com/Coss_Oficial"><img src="res/redes/twitter.png" alt="Twitter"/></a>
+		<a href="https://inara.cz/squadron/6039/"><img src="res/redes/inara.png" alt="Inara"/></a>
+</footer>
+</body>
+</html>

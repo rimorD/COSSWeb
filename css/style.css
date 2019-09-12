@@ -8,6 +8,12 @@ h1,h2,h3,nav{
 .navbar-brand, nav a{
 	font-size:1.25rem;
 }
+main{
+	margin-top:6vh;
+}
+a{
+	text-decoration:none;
+}
 h1,h2{
 	text-align:center;
 	color:#FFFCFF;
@@ -24,4 +30,16 @@ h3{
 .navbar{
 	color:#FFFFFF;
 	background-color:#262626 !important;
+	height:6vh;
+}
+footer{
+	text-align:center;
+	background-color:#262626;
+	color:#FFFFFF;
+	padding-top:1vh;
+	padding-bottom:1vh;
+}
+form{
+	margin:5vh,25vw;
+	background-color:#E3E3E3;
 }

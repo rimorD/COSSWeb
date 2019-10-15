@@ -75,14 +75,14 @@ form{
 #emailHelp{
 	color:#FFFFFF !important;
 }
-.news-header {
+.news-page-header {
     color: #d2cdcd;
     padding-top:8vh;
     padding-bottom:6vh;
     text-align:center;
 }
 .card {
-    background-color: hsla(0, 0%, 68%, 0.8) !important;
+    background-color: hsla(0, 0%, 75%, 0.8) !important;
 }
 .card-deck {
     margin-left: 10%;
@@ -103,4 +103,26 @@ form{
 .pilot-web{
     margin-left:3%;
     margin-right:3%;
+}
+.news-date{
+    font-style:italic;
+    margin-top:1.5vh;
+    font-size:110%;
+}
+.news-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.news-header{
+    margin-top:1.5vh;
+    margin-bottom:3vh;
+}
+.news-header h5{
+    font-size:2rem;
+}
+.news-img{
+    margin-top:auto;
+}
+p{
+    text-align:justify;
 }

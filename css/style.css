@@ -23,7 +23,7 @@ h3{
 	background-color:#262626 !important;
 	height:6vh;
 }
-footer{
+.page-footer{
 	text-align:center;
 	background-color:#262626;
 	color:#FFFFFF;
@@ -84,9 +84,6 @@ form{
 .card {
     background-color: hsla(0, 0%, 75%, 0.8) !important;
 }
-.card-deck {
-    margin-left: 10%;
-}
 .pilot-img {
     width: 75%;
     max-height: 30vh;
@@ -120,9 +117,13 @@ form{
 .news-header h5{
     font-size:2rem;
 }
-.news-img{
-    margin-top:auto;
-}
-p{
+.news-content > p{
     text-align:justify;
+}
+.news-content > blockquote{
+    font-size:95%;
+    font-style:italic;
+}
+.news-img{
+    max-height:25vh;
 }

@@ -26,6 +26,11 @@ h3{
 	background-color:#262626 !important;
 	height:6vh;
 }
+.carousel iframe{
+    margin-top:6vh;
+    width:100%;
+    height:94vh;
+}
 .page-footer{
 	text-align:center;
 	background-color:#262626;
